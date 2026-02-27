@@ -7,9 +7,9 @@
   align-items: baseline;
   justify-content: space-between;
   padding: 12px;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--border);
   border-radius: 10px;
-  background: #f6f7f9;
+  background: var(--surface);
 }
 
 .resume-header h2 {
@@ -19,11 +19,32 @@
 .resume-section {
   margin-top: 18px;
   padding: 12px;
-  border: 1px solid #dddddd;
+  border: 1px solid var(--border);
   border-radius: 10px;
-  background: #ffffff;
+  background: var(--bg);
 }
 
-.resume-section h2 {
-  margin-top: 0;
+.resume-section summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.resume-section summary::-webkit-details-marker {
+  display: none;
+}
+
+.resume-section summary::before {
+  content: "▸ ";
+  color: var(--muted);
+}
+
+.resume-section details[open] summary::before {
+  content: "▾ ";
+}
+
+.resume-section details[open] summary {
+  color: var(--link);
 }
