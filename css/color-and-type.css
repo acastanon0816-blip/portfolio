@@ -1,0 +1,44 @@
+/* css/color-and-type.css */
+
+main {
+  font-size: 1.02rem;
+}
+
+dl {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 12px;
+  background: #fafafa;
+}
+
+dt {
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+dd {
+  margin: 4px 0 10px 0;
+  color: #333333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  vertical-align: top;
+}
+
+th {
+  background: #f0f2f6;
+  text-align: left;
+}
+
+article p {
+  max-width: 70ch;
+}
