@@ -7,22 +7,67 @@
     <link rel="stylesheet" href="css/sitewide.css" />
     <link rel="stylesheet" href="css/color-and-type.css" />
   </head>
+  <script src="js/site.js"></script>
   <body>
     <header>
       <h1>Typography Article: Typography in Real Websites</h1>
 
-      <nav aria-label="Primary">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="showcase1.html">Showcase 1</a></li>
-          <li><a href="showcase2.html">Showcase 2</a></li>
-          <li><a href="showcase3.html">Showcase 3</a></li>
-          <li><a href="showcase4.html">Showcase 4</a></li>
-          <li><a href="color-theory.html">Color Theory</a></li>
-          <li><a href="typography.html">Typography</a></li>
-        </ul>
-      </nav>
+      <nav class="site-nav" aria-label="Primary">
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="resume.html">Resume</a></li>
+
+    <li class="has-dropdown">
+      <button class="dropdown-toggle" type="button" aria-expanded="false">
+        Showcases
+      </button>
+      <ul class="dropdown" role="menu">
+        <li><a role="menuitem" href="showcase1.html">Showcase 1</a></li>
+        <li><a role="menuitem" href="showcase2.html">Showcase 2</a></li>
+        <li><a role="menuitem" href="showcase3.html">Showcase 3</a></li>
+        <li><a role="menuitem" href="showcase4.html">Showcase 4</a></li>
+      </ul>
+    </li>
+
+    <li class="has-dropdown">
+      <button class="dropdown-toggle" type="button" aria-expanded="false">
+        Color Theory
+      </button>
+      <ul class="dropdown" role="menu">
+        <li><a role="menuitem" href="color-theory.html">Overview</a></li>
+        <li><a role="menuitem" href="color-themes.html">Color Themes</a></li>
+        <li><a role="menuitem" href="color-theory-article.html">Article</a></li>
+      </ul>
+    </li>
+
+    <li class="has-dropdown">
+      <button class="dropdown-toggle" type="button" aria-expanded="false">
+        Typography
+      </button>
+      <ul class="dropdown" role="menu">
+        <li><a role="menuitem" href="typography.html">Overview</a></li>
+        <li><a role="menuitem" href="font-types.html">Font Types</a></li>
+        <li><a role="menuitem" href="typography-article.html">Article</a></li>
+      </ul>
+    </li>
+
+    <li class="has-dropdown">
+      <button class="dropdown-toggle" type="button" aria-expanded="false">
+        Theme
+      </button>
+      <ul class="dropdown" role="menu">
+        <li class="dropdown-label">Mode</li>
+        <li><button class="menu-item" type="button" data-theme-mode="light">Light</button></li>
+        <li><button class="menu-item" type="button" data-theme-mode="dark">Dark</button></li>
+
+        <li class="dropdown-label">Font Size</li>
+        <li><button class="menu-item" type="button" data-font-size="small">Small</button></li>
+        <li><button class="menu-item" type="button" data-font-size="medium">Medium</button></li>
+        <li><button class="menu-item" type="button" data-font-size="large">Large</button></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
       <nav aria-label="Typography Sub Navigation">
         <ul>
