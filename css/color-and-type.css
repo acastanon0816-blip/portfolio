@@ -42,3 +42,23 @@ th {
 article p {
   max-width: 70ch;
 }
+.palette {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.swatch {
+  width: 34px;
+  height: 34px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+
+.hex-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #333333;
+}
